@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'main_css/nav.css';
+@import 'main_css/mainbody.css';
+
+:root{
+    --font-family: 'Roboto';
+    --main-color: #05a081;
+    --text-color:#fff;
+    --bg-color:#eee;
+    --bg-color-2:#333;
+}
+body{
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+header{
+    width: 100%;
+    position:absolute;
+    z-index: 5;
+}
+nav{
+    flex: 3;
+    padding: 20px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-flow: wrap;
+}
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+}
+
+.picture{
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+}
+
+.box{
+    width: 30%;
+    float: left;
+    padding:2em;
+    text-align: center;
+    
+}
+.bg-color{
+    background-color: var(--bg-color-2);
+    overflow: hidden;
+    color:var(--text-color);
+}
+.fas{
+    padding: 0.5em;
+    font-size: 3em;
+}
+footer{
+    width: 100%;
+    padding: 2.6em;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+#toggle, label{
+    display: none;
+}
